@@ -1,0 +1,62 @@
+#background {
+  background-color:white;
+}
+
+#wrapper {
+  background-color:grey;
+  margin:auto;
+  padding-top:2px;
+  width:1024px;
+  height:700px;
+  text-align:center;
+}
+
+.position1 {
+  background-color:#eeeeee;
+  margin:5px;
+  padding:5px;
+  text-align:center;
+  border-style: solid;
+}
+
+.position2 {
+  background-color:#eeeeee;
+  margin:5px;
+  padding:5px;
+  height:50px;
+  text-align:center;
+  border-style: dotted;
+}
+
+#content {
+
+}
+
+header {
+  overflow:auto;
+}
+
+#search {
+  clear:right;
+  float:right;
+}
+
+nav {
+  clear:right;
+  clear:left;
+  overflow:hidden;
+}
+
+section {
+    width:800px;
+    float:left;
+    padding:10px;	 	 
+}
+
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}

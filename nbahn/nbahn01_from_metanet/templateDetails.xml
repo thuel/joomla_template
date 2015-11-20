@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="template">
+	<name>nbahn1</name>
+	<creationDate>2015-10-28</creationDate>
+	<author>Lukas Steffen</author>
+	<authorEmail>lukas@steffen-steffen.ch</authorEmail>
+	<authorUrl>http://www.steffen-steffen.ch</authorUrl>
+	<copyright>Lukas Steffen 2015</copyright>
+	<license>GNU/GPL</license>
+	<version>0.1</version>
+	<description>Simple template for nbahn website</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</extension>
