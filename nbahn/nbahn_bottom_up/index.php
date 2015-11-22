@@ -40,16 +40,22 @@
   <jdoc:include type="modules" name="left_bottom" />
 </div>
 </aside>
+<?php if ($this->countModules( 'right_top' ) && $this->countModules( 'right_bottom' )) : ?>
 <aside class="right">
+<?php if ($this->countModules( 'right_top' )) : ?>
 <div id="sidebar_top" class="box">
   <p>position: right_top</p>
   <jdoc:include type="modules" name="right_top" />
 </div>
+<?php endif; ?>
+<?php if ($this->countModules( 'right_bottom' )) : ?>
 <div id="sidebar_bottom" class="box">
   <p>position: right_bottom</p>
   <jdoc:include type="modules" name="right_bottom" />
 </div>
+<?php endif; ?>
 </aside>
+<?php endif; ?>
 <section>
 <div id="breadcrumb" class="box">
   <p>position: breadcrumb</p>
