@@ -46,12 +46,12 @@ aside.left {
   margin:5px;
 }
 #sidebar_bottom {
-  height:140px;
+/*  height:140px; commented to test */
   margin:5px;
 }
 section {
   width:540px;
-  height:307px;
+/*  height:307px; commented to test */
   margin:auto;
 }
 #breadcrumb {
@@ -60,7 +60,7 @@ section {
 aside.right {
   float:right;
   width:200px;
-  height:307px;
+/*  height:307px; commented to test */
   border-style:solid;
   margin-right:5px;
 }
