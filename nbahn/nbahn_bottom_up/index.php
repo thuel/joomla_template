@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
-<--! The following line will getting obsolet, once running joomla -->
-<link rel="stylesheet" href="file:///Volumes/Data/Users/lukas/Sites/15-10-26-nbahn.steffen-steffen.ch/joomla%20template/nbahn/nbahn_bottom_up/css/template.css">
 </head>
 <body>
 <div id="wrapper">
