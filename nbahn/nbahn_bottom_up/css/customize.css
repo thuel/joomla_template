@@ -1,3 +1,23 @@
+/* Global reset and overall styles */
+* {
+margin:0;
+paddin:0;
+}
+h1,h2,h3,h4,h5,h6,p,blockquote,form,label,ul,ol,dl,fieldset,address {
+margin: 0.5em 0; 
+}
+li,dd { 
+margin-left:1em;
+}
+fieldset { 
+padding:.5em; 
+}
+body {
+font-size:76.1%;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+line-height:1.3em;
+}
+/* Template layout specific styles */
 #wrapper {
 }
 .box {
@@ -31,3 +51,4 @@ article {
 footer {
   text-align:center;
 }
+/* Joomla specific styles */
