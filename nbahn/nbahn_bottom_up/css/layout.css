@@ -1,0 +1,66 @@
+
+#wrapper {
+  width:980px;
+  margin:auto;
+  margin-top:-0.5em;
+}
+.box {
+}
+#inside {
+  padding:5px;
+}
+header {
+  height:60px;
+}
+#logo {
+  width:200px;
+  float:left;
+}
+#headertitle {
+  width:200px;
+  float:left;
+  margin-left:100px;
+}
+#search {
+  width:200px;
+  float:right;
+}
+nav {
+  clear:both;
+}
+/*The following part shows how to float three div side by side. The trick is to let float one left,
+  one right and one to adapt its position through margin:auto in the middle
+  Now there is a new implementation of this.
+*/
+#main_body {
+  float:left;
+  width:75%;
+}
+aside.left_sidebar {
+  float:left;
+  width:33.5%;
+}
+#sidebar_top {
+  margin:5px;
+}
+#sidebar_bottom {
+  margin:5px;
+}
+section {
+  width:66.5%;
+  float:right;
+}
+#breadcrumb {
+  margin:5px;
+}
+aside.right_sidebar {
+  float:right;
+  width:25%;
+}
+article {
+  margin:5px;
+  height:244px; /* Only test value, has to be changed to adapt to content */
+}
+footer {
+  clear:both;
+}

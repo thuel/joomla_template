@@ -1,0 +1,40 @@
+#wrapper {
+  background-color:lightgrey;
+}
+.box {
+  background-color:lightyellow;
+}
+header {
+  border-style:solid;
+}
+#logo {
+}
+#headertitle {
+}
+#search {
+}
+nav {
+}
+#main_body {
+}
+aside.left_sidebar {
+  background-color:lightblue;
+}
+#sidebar_top {
+}
+#sidebar_bottom {
+}
+section {
+  background-color:lightsteelblue;
+}
+#breadcrumb {
+}
+aside.right_sidebar {
+  background-color:lightblue;
+}
+article {
+}
+footer {
+  background-color:black;
+  color:white;
+}
