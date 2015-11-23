@@ -1,77 +1,35 @@
+@import url("layout.css"); /* CSS file with layout information */
+@import url("color.css"); /* CSS file with color information */
+@import url("customize.css"); /* CSS file containing all the typography and Joomla styling */
 #wrapper {
-  width:980px;
-  background-color:lightgrey;
-  border-style:solid;
-  border-width:1px;
-  margin:auto;
-  margin-top:-0.5em;
 }
 .box {
-  border-style:solid;
 }
 header {
-  border-style:solid;
-  padding:5px;
-  height:60px;
 }
 #logo {
-  width:200px;
-  float:left;
 }
 #headertitle {
-  width:200px;
-  float:left;
-  margin-left:100px;
 }
 #search {
-  width:200px;
-  float:right;
 }
 nav {
-  clear:both;
-  margin:5px;
 }
-/*The following part shows how to float three div side by side. The trick is to let float one left,
-  one right and one to adapt its position through margin:auto in the middle
-  Now there is a new implementation of this.
-*/
 #main_body {
-  float:left;
-  width:75%;
 }
 aside.left_sidebar {
-  float:left;
-  width:33.5%;
-  background-color:lightblue;
 }
 #sidebar_top {
-/*  height:140px; commented to test, delete if ok */
-  margin:5px;
 }
 #sidebar_bottom {
-  margin:5px;
 }
 section {
-  width:66.5%;
-  float:right;
-  background-color:lightsteelblue;
 }
 #breadcrumb {
-  margin:5px;
 }
 aside.right_sidebar {
-  float:right;
-  width:25%;
-  background-color:lightblue;
 }
 article {
-  margin:5px;
-  height:244px;
 }
 footer {
-  background-color:black;
-  color:white;
-  clear:both;
-  text-align:center;
-  padding:5px;
 }
