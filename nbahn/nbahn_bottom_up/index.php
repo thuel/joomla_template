@@ -12,6 +12,7 @@
 <body>
 <div id="wrapper">
 <header>
+<div id="inside">
 <div id="logo" class="box">
   <p>position: logo</p>
   <jdoc:include type="modules" name="logo" />
@@ -25,10 +26,13 @@
   <jdoc:include type="modules" name="search" />
 </div>
 <jdoc:include type="modules" name="top" />
+</div>
 </header>
 <nav class="box">
+<div id="inside">
   <p>position: topmenu</p>
   <jdoc:include type="modules" name="topmenu" />
+</div>
 </nav>
 <div id="main_body">
 <section>
@@ -66,8 +70,10 @@
 <?php endif; ?>
 </aside>
 <footer>
+<div id="inside">
 <jdoc:include type="modules" name="footer" />
 Copyright © Lukas Steffen
+</div>
 </footer>
 </div>
 </body> 
