@@ -33,36 +33,36 @@ nav {
 }
 /*The following part shows how to float three div side by side. The trick is to let float one left,
   one right and one to adapt its position through margin:auto in the middle
+  Now there is a new implementation of this.
 */
-aside.left {
+#main_body {
   float:left;
-  width:200px;
-  border-style:solid;
-  margin-left:5px;
-  margin-bottom:5px;
+  width:75%;
+}
+aside.left_sidebar {
+  float:left;
+  width:33.5%;
+  background-color:lightblue;
 }
 #sidebar_top {
-  height:140px;
+/*  height:140px; commented to test, delete if ok */
   margin:5px;
 }
 #sidebar_bottom {
-/*  height:140px; commented to test */
   margin:5px;
 }
 section {
-  width:540px;
-/*  height:307px; commented to test */
-  margin:auto;
+  width:66.5%;
+  float:right;
+  background-color:lightsteelblue;
 }
 #breadcrumb {
   margin:5px;
 }
-aside.right {
+aside.right_sidebar {
   float:right;
-  width:200px;
-/*  height:307px; commented to test */
-  border-style:solid;
-  margin-right:5px;
+  width:25%;
+  background-color:lightblue;
 }
 article {
   margin:5px;

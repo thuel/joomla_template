@@ -30,41 +30,41 @@
   <p>position: topmenu</p>
   <jdoc:include type="modules" name="topmenu" />
 </nav>
-<aside class="left">
-<div id="sidebar_top" class="box">
-  <p>position: left_top</p>
-  <jdoc:include type="modules" name="left_top" />
-</div>
-<div id="sidebar_bottom" class="box">
-  <p>position: left_bottom</p>
-  <jdoc:include type="modules" name="left_bottom" />
-</div>
-</aside>
-<?php if ($this->countModules( 'right_top' ) && $this->countModules( 'right_bottom' )) : ?>
-<aside class="right">
-<?php if ($this->countModules( 'right_top' )) : ?>
-<div id="sidebar_top" class="box">
-  <p>position: right_top</p>
-  <jdoc:include type="modules" name="right_top" />
-</div>
-<?php endif; ?>
-<?php if ($this->countModules( 'right_bottom' )) : ?>
-<div id="sidebar_bottom" class="box">
-  <p>position: right_bottom</p>
-  <jdoc:include type="modules" name="right_bottom" />
-</div>
-<?php endif; ?>
-</aside>
-<?php endif; ?>
+<div id="main_body">
 <section>
 <div id="breadcrumb" class="box">
   <p>position: breadcrumb</p>
   <jdoc:include type="modules" name="breadcrumb" />
 </div>
-<article class="box">
+<article>
 <jdoc:include type="component" />
 </article>
 </section>
+<aside class="left_sidebar">
+<div id="sidebar_top">
+  <p>position: left_top</p>
+  <jdoc:include type="modules" name="left_top" />
+</div>
+<div id="sidebar_bottom">
+  <p>position: left_bottom</p>
+  <jdoc:include type="modules" name="left_bottom" />
+</div>
+</div>
+</aside>
+<aside class="right_sidebar">
+<?php if ($this->countModules( 'right_top' )) : ?>
+<div id="sidebar_top">
+  <p>position: right_top</p>
+  <jdoc:include type="modules" name="right_top" />
+</div>
+<?php endif; ?>
+<?php if ($this->countModules( 'right_bottom' )) : ?>
+<div id="sidebar_bottom">
+  <p>position: right_bottom</p>
+  <jdoc:include type="modules" name="right_bottom" />
+</div>
+<?php endif; ?>
+</aside>
 <footer>
 <jdoc:include type="modules" name="footer" />
 Copyright © Lukas Steffen
