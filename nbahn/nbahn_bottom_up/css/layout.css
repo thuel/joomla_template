@@ -2,7 +2,7 @@
 #wrapper {
   width:980px;
   margin:auto;
-  margin-top:-0.5em;
+/*  margin-top:-0.5em; comment to test effect*/
 }
 .box {
 }
@@ -16,13 +16,13 @@ header {
   width:200px;
   float:left;
 }
-#headertitle {
+#headertitle { /* Placeholder for header image */
   width:200px;
   float:left;
   margin-left:100px;
 }
 #search {
-  width:200px;
+  width:22%;
   float:right;
 }
 nav {
@@ -34,11 +34,20 @@ nav {
 */
 #main_body {
   float:left;
-  width:75%;
+  width:78%;
+}
+section {
+  width:72%;
+  float:right;
+  overflow:hidden;
+}
+#breadcrumb {
+  margin:5px;
 }
 aside.left_sidebar {
   float:left;
-  width:33.5%;
+  width:28%;
+  overflow:hidden;
 }
 #sidebar_top {
   margin:5px;
@@ -46,16 +55,10 @@ aside.left_sidebar {
 #sidebar_bottom {
   margin:5px;
 }
-section {
-  width:66.5%;
-  float:right;
-}
-#breadcrumb {
-  margin:5px;
-}
 aside.right_sidebar {
   float:right;
-  width:25%;
+  width:22%;
+  overflow:hidden;
 }
 article {
   margin:5px;
