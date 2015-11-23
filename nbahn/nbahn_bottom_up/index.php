@@ -8,6 +8,32 @@
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
+<?php $leftSidebarModules = $this->countModules( 'left_top' ) + $this->countModules( 'left_bottom' ) ?>
+<?php $rightSidebarModules = $this->countModules( 'right_top' ) + $this->countModules( 'right_bottom' ) ?>
+<?php if ( $rightSidebarModules <= 0 ) { ?> 
+<style type="text/css" media="screen"> 
+#main_body {width:100%;} 
+section{width:78%;} 
+aside.left_sidebar{width:22%;}
+aside.right_sidebar{display:none;} 
+</style>
+<?php } ?>
+<?php if ( $leftSidebarModules <= 0 ) { ?> 
+<style type="text/css" media="screen"> 
+#main_body {width:78%;} 
+section{width:100%;} 
+aside.left_sidebar{display:none;}
+aside.right_sidebar{width:22%;} 
+</style>
+<?php } ?>
+<?php if ( $rightSidebarModules <= 0 && $leftSidebarModules <= 0) { ?> 
+<style type="text/css" media="screen"> 
+#main_body {width:100%;} 
+section{width:100%;} 
+aside.left_sidebar{display:none;}
+aside.right_sidebar{display:none;} 
+</style>
+<?php } ?>
 </head>
 <body>
 <div id="wrapper">
@@ -45,34 +71,38 @@
 </article>
 </section>
 <aside class="left_sidebar">
+<?php if ($this->countModules('left_top')) { ?>
 <div id="sidebar_top">
   <p>position: left_top</p>
   <jdoc:include type="modules" name="left_top" />
 </div>
+<?php } ?>
+<?php if ($this->countModules('left_bottom')) { ?>
 <div id="sidebar_bottom">
   <p>position: left_bottom</p>
   <jdoc:include type="modules" name="left_bottom" />
 </div>
-</div>
+<?php } ?>
 </aside>
+</div>
 <aside class="right_sidebar">
-<?php if ($this->countModules( 'right_top' )) : ?>
+<?php if ($this->countModules('right_top')) { ?>
 <div id="sidebar_top">
   <p>position: right_top</p>
   <jdoc:include type="modules" name="right_top" />
 </div>
-<?php endif; ?>
-<?php if ($this->countModules( 'right_bottom' )) : ?>
+<?php } ?>
+<?php if ($this->countModules('right_top')) { ?>
 <div id="sidebar_bottom">
   <p>position: right_bottom</p>
   <jdoc:include type="modules" name="right_bottom" />
 </div>
-<?php endif; ?>
+<?php } ?>
 </aside>
 <footer>
 <div id="inside">
 <jdoc:include type="modules" name="footer" />
-Copyright © Lukas Steffen
+Copyright Â© Lukas Steffen
 </div>
 </footer>
 </div>
