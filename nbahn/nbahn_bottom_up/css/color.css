@@ -1,11 +1,13 @@
 #wrapper {
-  background-color:lightgrey;
+  background-color:gainsboro;
 }
 .box {
   background-color:lightyellow;
 }
+#inside {
+}
 header {
-  border-style:solid;
+  background-color:lightskyblue;
 }
 #logo {
 }
