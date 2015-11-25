@@ -1,32 +1,41 @@
 
 #wrapper {
-  width:980px;
+  width:75%;
   margin:auto;
-/*  margin-top:-0.5em; comment to test effect*/
 }
 .box {
 }
+div.container {
+  position:relative;	
+  margin-bottom:-0.8%;
+}
 #inside {
-  padding:5px;
+  padding 5px;
+}
+#inside.header {
+  position:absolute;
+  top:10%;
+  left:1%;
+  width:98%;
+  height:80%;
 }
 header {
-  height:60px;
+}
+img.header {
+  height:100%;
+  width:100%;
+  padding-bottom:-1px;
 }
 #logo {
-  width:200px;
+  width:22%;
   float:left;
-}
-#headertitle { /* Placeholder for header image */
-  width:200px;
-  float:left;
-  margin-left:100px;
 }
 #search {
   width:22%;
   float:right;
 }
 nav {
-  clear:both;
+  clear:both; 
 }
 /*The following part shows how to float three div side by side. The trick is to let float one left,
   one right and one to adapt its position through margin:auto in the middle
