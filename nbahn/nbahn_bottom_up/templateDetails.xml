@@ -31,12 +31,13 @@
 	<config>
   	<fields name="params">
     	<fieldset name="basic">
+			<field name="headerimage" type="media" label="Header Image" description="Choose an image to be displayed in the header" />
 			<field name="logotype" type="list" default="image" label="Logo Type" description="Pick the type of logo." filter="word">
 				<option value="image">Image logo</option>
 				<option value="text">Text logo</option>
 			</field>			
 			<field name="logo" type="media" label="Logo Image" description="Choose an image logo" />
-			<field name="sitetitle"  type="text" default="Site Name" label="Text logo (only if activated)" description="Enter text instead of image logo." filter="string" />
+			<field name="sitetitle"  type="text" default="Website" label="Text logo (only if activated)" description="Enter text instead of image logo." filter="string" />			
 		</fieldset>
 	</fields>
 	</config>

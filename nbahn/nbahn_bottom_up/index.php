@@ -9,10 +9,17 @@
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
 <!--get the parameters of the template-->
-<?php if ( $this->params->get('logo') ) {
-  $headerimage = $this->params->get('logo'); 
+<?php if ( $this->params->get('headerimage') ) {
+  $headerimage = $this->params->get('headerimage'); 
 } else {
   $headerimage = $this->baseurl . "/templates/" . $this->template . "/images/headerimage.jpg"; 
+} ?>
+<?php if ( $this->params->get('logotype') == "image" ) {
+  $logo = $this->params->get('logo'); 
+  $logotype = "image";
+} else {
+  $logo = $this->params->get('sitetitle');
+  $logotype = "text";
 } ?>
 <!--php logic to hide sidebars on the left an right in general if there is no joomla module-->
 <?php $noLeftSidebarModules = TRUE; ?>
@@ -53,6 +60,11 @@ aside.right_sidebar{display:none;}
 <div id="inside" class="header">
 <div id="logo" class="box"><!--position logo-->
   <p>position: logo</p>
+  <?php if ( $logotype == "image" ) : ?>
+    <img src="<?php echo $logo; ?>
+  <?php else : ?>
+    <h3><?php echo $logo; ?></h3>
+  <?php endif; ?>  
   <jdoc:include type="modules" name="logo" />
 </div>
 <!--<div id="headertitle">
