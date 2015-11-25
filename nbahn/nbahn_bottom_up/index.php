@@ -48,18 +48,21 @@ aside.right_sidebar{display:none;}
 <body>
 <div id="wrapper">
 <header>
-<div id="inside">
-<div id="logo" class="box">
+<div class="container">
+<img class="header" title="Header Image" alt="Header image not selected" src="<?php echo $headerimage; ?>" >
+<div id="inside" class="header">
+<div id="logo" class="box"><!--position logo-->
   <p>position: logo</p>
   <jdoc:include type="modules" name="logo" />
 </div>
-<div id="headertitle">
-  <p>position: header</p>
+<!--<div id="headertitle">
   <jdoc:include type="modules" name="header" />
+</div>-->
 <div id="search"><!--position search-->
   <jdoc:include type="modules" name="search" />
 </div>
 <jdoc:include type="modules" name="top" />
+</div>
 </div>
 </header>
 <nav class="box">
