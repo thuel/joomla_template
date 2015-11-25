@@ -51,4 +51,59 @@ article {
 footer {
   text-align:center;
 }
+  /* typographical elements */
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: underline;
+}
+/* is h1 used anywhere? */
+h1 {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.9em;
+  margin-bottom: 12px;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a:hover {
+  text-decoration: none;
+}
+h2 {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 550;
+  font-size: 1.6em;
+  margin-bottom: 5px;  
+}
+h2 a {
+  text-decoration: none;
+}
+h2 a:hover {
+  text-decoration: none;
+}
+h3 {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  margin-bottom: 3px;
+}
+h3 a {
+  text-decoration: none;
+}
+h3 a:hover {
+  text-decoration: none;
+}
 /* Joomla specific styles */
+.moduletable h3 {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.search {
+  text-align:center;
+}
