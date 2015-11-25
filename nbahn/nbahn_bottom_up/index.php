@@ -8,9 +8,16 @@
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
-<?php $leftSidebarModules = $this->countModules( 'left_top' ) + $this->countModules( 'left_bottom' ) ?>
-<?php $rightSidebarModules = $this->countModules( 'right_top' ) + $this->countModules( 'right_bottom' ) ?>
 <?php if ( $rightSidebarModules <= 0 ) { ?> 
+<?php if ( $this->params->get('logo') ) {
+  $headerimage = $this->params->get('logo'); 
+} else {
+  $headerimage = $this->baseurl . "/templates/" . $this->template . "/images/headerimage.jpg"; 
+} ?>
+<?php $noLeftSidebarModules = TRUE; ?>
+<?php $noRightSidebarModules = TRUE; ?>
+<?php if ( $this->countModules( 'left_top or left_bottom' )) { $noLeftSidebarModules = FALSE; } ?>
+<?php if ( $this->countModules( 'right_top or right_bottom' )) { $noRightSidebarModules = FALSE; } ?>
 <style type="text/css" media="screen"> 
 #main_body {width:100%;} 
 section{width:78%;} 
