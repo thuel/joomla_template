@@ -1,3 +1,8 @@
+/* structural elements */
+body {
+  color: #0b2161; 
+  background-color: #313D61;
+  }
 #wrapper {
   background-color:gainsboro;
 }
@@ -7,13 +12,16 @@
 #inside {
 }
 header {
-  background-color:lightskyblue;
+  background-color: #0b2161;
 }
 #logo {
 }
 #headertitle {
 }
 #search {
+  border-radius:6px;
+  background-color: #0b2161;
+  color: #f1f1f1;
 }
 nav {
 }
@@ -39,4 +47,48 @@ article {
 footer {
   background-color:black;
   color:white;
+}
+/* typographical elements */
+a {
+  color: #3b58b0;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #f1f1f1;
+  background: #0b2161;
+}
+h1 {
+  color: #585c00;
+}
+h1 a {
+  color: #585c00;
+}
+h1 a:hover {
+  color: #c1c75a;
+  background: none;
+}
+h2 {
+  color: #559402; 
+}
+h2 a {
+  color: #559402;
+}
+h2 a:hover {
+  color: #c1c75a;
+  background: none;
+}
+h3 {
+  color: #68ad0b;
+}
+h3 a {
+  color: #68ad0b;
+}
+h3 a:hover {
+  color: #c1c75a;
+  background: none;
+}
+/* Joomla specific styles */
+.moduletable h3 {
+  color: #5d0500;
 }
