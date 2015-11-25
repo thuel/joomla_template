@@ -8,16 +8,18 @@
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
-<?php if ( $rightSidebarModules <= 0 ) { ?> 
+<!--get the parameters of the template-->
 <?php if ( $this->params->get('logo') ) {
   $headerimage = $this->params->get('logo'); 
 } else {
   $headerimage = $this->baseurl . "/templates/" . $this->template . "/images/headerimage.jpg"; 
 } ?>
+<!--php logic to hide sidebars on the left an right in general if there is no joomla module-->
 <?php $noLeftSidebarModules = TRUE; ?>
 <?php $noRightSidebarModules = TRUE; ?>
 <?php if ( $this->countModules( 'left_top or left_bottom' )) { $noLeftSidebarModules = FALSE; } ?>
 <?php if ( $this->countModules( 'right_top or right_bottom' )) { $noRightSidebarModules = FALSE; } ?>
+<?php if ( $noRightSidebarModules ) { ?> <!--css styling if there is no module in the right sidebar-->
 <style type="text/css" media="screen"> 
 #main_body {width:100%;} 
 section{width:78%;} 
@@ -25,7 +27,7 @@ aside.left_sidebar{width:22%;}
 aside.right_sidebar{display:none;} 
 </style>
 <?php } ?>
-<?php if ( $leftSidebarModules <= 0 ) { ?> 
+<?php if ( $noLeftSidebarModules ) { ?> <!--css styling if there is no module in the left sidebar-->
 <style type="text/css" media="screen"> 
 #main_body {width:78%;} 
 section{width:100%;} 
@@ -33,7 +35,7 @@ aside.left_sidebar{display:none;}
 aside.right_sidebar{width:22%;} 
 </style>
 <?php } ?>
-<?php if ( $rightSidebarModules <= 0 && $leftSidebarModules <= 0) { ?> 
+<?php if ( $noRightSidebarModules && $noLeftSidebarModules ) { ?> <!--css styling if there is no sidebar at all-->
 <style type="text/css" media="screen"> 
 #main_body {width:100%;} 
 section{width:100%;} 
@@ -41,6 +43,7 @@ aside.left_sidebar{display:none;}
 aside.right_sidebar{display:none;} 
 </style>
 <?php } ?>
+<!--end of php logic to hide sidebars if there is no joomla module enabled-->
 </head>
 <body>
 <div id="wrapper">
@@ -53,9 +56,7 @@ aside.right_sidebar{display:none;}
 <div id="headertitle">
   <p>position: header</p>
   <jdoc:include type="modules" name="header" />
-</div>
-<div id="search" class="box">
-  <p>position: search</p>
+<div id="search"><!--position search-->
   <jdoc:include type="modules" name="search" />
 </div>
 <jdoc:include type="modules" name="top" />
@@ -67,6 +68,7 @@ aside.right_sidebar{display:none;}
   <jdoc:include type="modules" name="topmenu" />
 </div>
 </nav>
+<!--start of the three column layout-->
 <div id="main_body">
 <section>
 <div id="breadcrumb" class="box">
@@ -77,40 +79,46 @@ aside.right_sidebar{display:none;}
 <jdoc:include type="component" />
 </article>
 </section>
+<?php if ( $this->countModules( 'left_top or left_bottom' )) : ?>
 <aside class="left_sidebar">
-<?php if ($this->countModules('left_top')) { ?>
+<?php if ($this->countModules( 'left_top' )) : ?>
 <div id="sidebar_top">
   <p>position: left_top</p>
   <jdoc:include type="modules" name="left_top" />
 </div>
-<?php } ?>
-<?php if ($this->countModules('left_bottom')) { ?>
+<?php endif; ?>
+<?php if ($this->countModules( 'left_bottom' )) : ?>
 <div id="sidebar_bottom">
   <p>position: left_bottom</p>
   <jdoc:include type="modules" name="left_bottom" />
 </div>
-<?php } ?>
+<?php endif; ?>
 </aside>
-</div>
+<?php endif; ?>
+</div><!--end of main_body div-->
+<?php if ($this->countModules( 'right_top or right_bottom' )) : ?>
 <aside class="right_sidebar">
-<?php if ($this->countModules('right_top')) { ?>
+<?php if ($this->countModules( 'right_top' )) : ?>
 <div id="sidebar_top">
   <p>position: right_top</p>
   <jdoc:include type="modules" name="right_top" />
 </div>
-<?php } ?>
-<?php if ($this->countModules('right_top')) { ?>
+<?php endif; ?>
+<?php if ($this->countModules( 'right_bottom' )) : ?>
 <div id="sidebar_bottom">
   <p>position: right_bottom</p>
   <jdoc:include type="modules" name="right_bottom" />
 </div>
-<?php } ?>
+<?php endif; ?>
 </aside>
+<?php endif; ?>
+<!--end of the three column layout-->
 <footer>
 <div id="inside">
 <jdoc:include type="modules" name="footer" />
 Copyright © Lukas Steffen
 </div>
 </footer>
-</div>
+</div><!--end of div wrapper-->
 </body> 
+</html>
