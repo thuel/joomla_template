@@ -59,7 +59,7 @@ aside.right_sidebar{display:none;}
 <div id="wrapper">
 <header>
 <img class="header" title="Header Image" alt="Header image not selected" src="<?php echo $headerimage; ?>" >
-<div id="inside" class="header">
+<div class="inside header">
 <div id="logo" class="box"><!--position logo-->
   <?php if ( $logotype == "image" ) : ?>
     <img src="<?php echo $logo; ?>
@@ -78,7 +78,7 @@ aside.right_sidebar{display:none;}
 </div>
 </header>
 <nav>
-<div id="inside">
+<div class="inside">
   <jdoc:include type="modules" name="topmenu" />
 </div>
 </nav>
@@ -89,10 +89,6 @@ aside.right_sidebar{display:none;}
 </div>
 <div id="main_body">
 <section>
-<div id="breadcrumb" class="box">
-  <p>position: breadcrumb</p>
-  <jdoc:include type="modules" name="breadcrumb" />
-</div>
 <article>
 <jdoc:include type="component" />
 </article>
@@ -133,7 +129,7 @@ aside.right_sidebar{display:none;}
 </div><!--end of content div-->
 <!--end of the three column layout-->
 <footer>
-<div id="inside">
+<div class="inside">
 <jdoc:include type="modules" name="footer" />
 Copyright © Lukas Steffen
 </div>

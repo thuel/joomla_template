@@ -89,7 +89,7 @@ header {
   padding: 7px;
 }
 nav {
-  margin:0px;
+  margin:-0px 0 0 0;
   float:left;
   font-family:'Cabin Condensed', sans-serif;
   font-size:1.4em;
@@ -98,8 +98,7 @@ nav {
   padding-left:0;
   width:100%;
 }
-nav inside {
-  margin:0;
+nav .inside {
 }
 nav ul.menu {
 /* old  list-style-type:none;
