@@ -5,9 +5,7 @@
 }
 .box {
 }
-div.container {
-  position:relative;	
-/*  margin-bottom:-0.8%;*/
+.container {
 }
 #inside {
   padding 5px;
@@ -20,11 +18,13 @@ div.container {
   height:80%;
 }
 header {
-  margin-bottom:-3px;
+  margin-bottom:0px;
+  position:relative;
 }
 img.header {
   height:100%;
   width:100%;
+  margin-bottom:-3px;
 }
 #logo {
   width:50%;

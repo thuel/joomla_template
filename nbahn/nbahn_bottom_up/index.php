@@ -58,7 +58,6 @@ aside.right_sidebar{display:none;}
 <body>
 <div id="wrapper">
 <header>
-<div class="container">
 <img class="header" title="Header Image" alt="Header image not selected" src="<?php echo $headerimage; ?>" >
 <div id="inside" class="header">
 <div id="logo" class="box"><!--position logo-->
@@ -76,7 +75,6 @@ aside.right_sidebar{display:none;}
   <jdoc:include type="modules" name="search" />
 </div>
 <jdoc:include type="modules" name="top" />
-</div>
 </div>
 </header>
 <nav>
