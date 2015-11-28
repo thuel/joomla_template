@@ -79,13 +79,16 @@ aside.right_sidebar{display:none;}
 </div>
 </div>
 </header>
-<nav class="box">
+<nav>
 <div id="inside">
-  <p>position: topmenu</p>
   <jdoc:include type="modules" name="topmenu" />
 </div>
 </nav>
 <!--start of the three column layout-->
+<div id="content">
+<div id="breadcrumb">
+  <jdoc:include type="modules" name="breadcrumb" />
+</div>
 <div id="main_body">
 <section>
 <div id="breadcrumb" class="box">
@@ -129,6 +132,7 @@ aside.right_sidebar{display:none;}
 <?php endif; ?>
 </aside>
 <?php endif; ?>
+</div><!--end of content div-->
 <!--end of the three column layout-->
 <footer>
 <div id="inside">
