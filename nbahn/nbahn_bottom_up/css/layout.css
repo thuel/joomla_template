@@ -7,10 +7,11 @@
 }
 .container {
 }
-#inside {
-  padding 5px;
+.inside {
+  padding:8px;
 }
-#inside.header {
+.inside.header {
+  padding:0px;
   position:absolute;
   top:10%;
   left:1%;
@@ -36,6 +37,10 @@ img.header {
 }
 nav {
   clear:both; 
+}
+nav .inside {
+  margin:0;
+  padding:0;
 }
 /*The following part shows how to float three div side by side. The trick is to let float one left,
   one right and one to adapt its position through margin:auto in the middle
