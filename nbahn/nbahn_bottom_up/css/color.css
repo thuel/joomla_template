@@ -4,10 +4,10 @@ body {
   background-color: #313D61;
   }
 #wrapper {
-  background-color:gainsboro;
+  /*background-color:gainsboro;*/
 }
 .box {
-  background-color:lightyellow;
+  /*background-color:lightyellow;*/
 }
 #inside {
 }
@@ -15,6 +15,15 @@ header {
   background-color: #0b2161;
 }
 #logo {
+}
+#logo a {
+  color:#F1F1F1;
+  text-decoration:none;
+}
+#logo a:hover {
+  text-decoration: none;
+  color: 0b2161;
+  background: none;
 }
 #headertitle {
 }
@@ -24,23 +33,53 @@ header {
   color: #f1f1f1;
 }
 nav {
+ old  color:#F1F1F1;
+  background-color:#0B2161;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  color: #fff;
+}
+nav ul.menu {
+/*  old implementation
+  background-color:#3B58B0;*/
+}
+nav ul.menu li {
+  background-color:#3B58B0 /* old #0b2161*/;
+}
+nav ul.menu li a {
+  color:#F1F1F1;
+  text-decoration:none;
+  background-color:#0b2161;
+}
+nav ul.menu li a:hover {
+  color:#f1f1f1;
+  text-decoration:none;
+  background-color:#133AAD; 
+}
+nav ul.menu li a:active {
+  background-color:#133AAD; 
+}
+#content {
+  background:url("../images/bg_img07.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #main_body {
 }
 aside.left_sidebar {
-  background-color:lightblue;
 }
 #sidebar_top {
 }
 #sidebar_bottom {
 }
 section {
-  background-color:lightsteelblue;
 }
 #breadcrumb {
 }
 aside.right_sidebar {
-  background-color:lightblue;
 }
 article {
 }
