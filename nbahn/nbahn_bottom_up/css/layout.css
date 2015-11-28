@@ -77,7 +77,7 @@ aside.right_sidebar {
 }
 article {
   margin:5px;
-  height:244px; /* Only test value, has to be changed to adapt to content */
+  height:100%; /* Only test value, has to be changed to adapt to content */
 }
 footer {
   clear:both;
