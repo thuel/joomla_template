@@ -84,7 +84,7 @@ aside.right_sidebar{display:none;}
 </nav>
 <!--start of the three column layout-->
 <div id="content">
-<div id="breadcrumb">
+<div id="breadcrumb" class="inside">
   <jdoc:include type="modules" name="breadcrumb" />
 </div>
 <div id="main_body">
@@ -96,14 +96,12 @@ aside.right_sidebar{display:none;}
 <?php if ( $this->countModules( 'left_top or left_bottom' )) : ?>
 <aside class="left_sidebar">
 <?php if ($this->countModules( 'left_top' )) : ?>
-<div id="sidebar_top">
-  <p>position: left_top</p>
+<div id="sidebar_top" class="inside">
   <jdoc:include type="modules" name="left_top" />
 </div>
 <?php endif; ?>
 <?php if ($this->countModules( 'left_bottom' )) : ?>
-<div id="sidebar_bottom">
-  <p>position: left_bottom</p>
+<div id="sidebar_bottom" class="inside">
   <jdoc:include type="modules" name="left_bottom" />
 </div>
 <?php endif; ?>
@@ -113,14 +111,12 @@ aside.right_sidebar{display:none;}
 <?php if ($this->countModules( 'right_top or right_bottom' )) : ?>
 <aside class="right_sidebar">
 <?php if ($this->countModules( 'right_top' )) : ?>
-<div id="sidebar_top">
-  <p>position: right_top</p>
+<div id="sidebar_top" class="inside">
   <jdoc:include type="modules" name="right_top" />
 </div>
 <?php endif; ?>
 <?php if ($this->countModules( 'right_bottom' )) : ?>
-<div id="sidebar_bottom">
-  <p>position: right_bottom</p>
+<div id="sidebar_bottom" class="inside">
   <jdoc:include type="modules" name="right_bottom" />
 </div>
 <?php endif; ?>

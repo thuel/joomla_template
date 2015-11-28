@@ -62,7 +62,10 @@ section {
   overflow:hidden;
 }
 #breadcrumb {
-  margin:5px;
+}
+#breadcrumb.inside {
+  padding-top:2px;
+  padding-bottom:2px;
 }
 aside.left_sidebar {
   float:left;
@@ -70,10 +73,8 @@ aside.left_sidebar {
   overflow:hidden;
 }
 #sidebar_top {
-  margin:5px;
 }
 #sidebar_bottom {
-  margin:5px;
 }
 aside.right_sidebar {
   float:right;
@@ -81,7 +82,6 @@ aside.right_sidebar {
   overflow:hidden;
 }
 article {
-  margin:5px;
   height:100%; /* Only test value, has to be changed to adapt to content */
 }
 footer {
