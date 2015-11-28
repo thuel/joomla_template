@@ -1,59 +1,25 @@
 /* Global reset and overall styles */
 * {
-margin:0;
-paddin:0;
+  margin:0;
+  padding:0;
 }
 h1,h2,h3,h4,h5,h6,p,blockquote,form,label,ul,ol,dl,fieldset,address {
-margin: 0.5em 0; 
+/*  margin: 0.5em 0; */
 }
 li,dd { 
-margin-left:1em;
+/*  margin-left:1em;*/
 }
 fieldset { 
-padding:.5em; 
+/*  padding:.5em; */
 }
 body {
-font-size:76.1%;
-font-family:Verdana, Arial, Helvetica, sans-serif;
-line-height:1.3em;
+  font-size:76.1%;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  line-height:1.3em;
 }
 /* Template layout specific styles */
-#wrapper {
-}
-.box {
-}
-header {
-}
-#logo {
-}
-#headertitle {
-}
-#search {
-}
-nav {
-}
-#main_body {
-}
-aside.left_sidebar {
-}
-#sidebar_top {
-}
-#sidebar_bottom {
-}
-section {
-}
-#breadcrumb {
-}
-aside.right_sidebar {
-}
-article {
-}
-footer {
-  text-align:center;
-}
-  /* typographical elements */
 a {
-  text-decoration: none;
+  text-decoration:none;
 }
 a:hover,
 a:active,
@@ -62,10 +28,10 @@ a:focus {
 }
 /* is h1 used anywhere? */
 h1 {
-  font-family: 'Cabin Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 1.9em;
-  margin-bottom: 12px;
+  font-family:'Cabin Condensed', sans-serif;
+  font-weight:400;
+  font-size:1.9em;
+  margin-bottom:12px;
 }
 h1 a {
   text-decoration: none;
@@ -96,6 +62,89 @@ h3 a {
 }
 h3 a:hover {
   text-decoration: none;
+}
+ol, ul {
+  list-style:none;
+}
+ul {
+}
+#wrapper {
+}
+.box {
+}
+header {
+}
+#logo {
+}
+#logo a {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size:2.4em;
+  font-weight:400;
+  line-height:1em;
+  padding: 0 14px;
+  vertical-align:baseline;
+  letter-spacing:-0.03em;
+}
+#search {
+  padding: 7px;
+}
+nav {
+  margin:0px;
+  float:left;
+  font-family:'Cabin Condensed', sans-serif;
+  font-size:1.4em;
+  font-weight:600;
+  overflow:hidden;
+  padding-left:0;
+  width:100%;
+}
+nav inside {
+  margin:0;
+}
+nav ul.menu {
+/* old  list-style-type:none;
+  padding:13px 0;*/
+/* new implementation */
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+nav ul.menu li {
+/* old  margin:0;
+  display:inline;
+  padding-right:1px;*/
+/* new implementation */
+  float:left;
+}
+nav ul.menu li a {
+/* old different menu item sizes
+  padding:11px 22px; */
+/* new implementation */
+  width:80px;
+  display:block;
+  text-align:center;
+  padding: 11px 22px;
+  margin-right:1px; /* this produces the vertical line between menu items */
+}
+  
+#main_body {
+}
+aside.left_sidebar {
+}
+#sidebar_top {
+}
+#sidebar_bottom {
+}
+section {
+}
+#breadcrumb {
+}
+aside.right_sidebar {
+}
+article {
+}
+footer {
+  text-align:center;
 }
 /* Joomla specific styles */
 .moduletable h3 {
