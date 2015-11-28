@@ -62,11 +62,10 @@ aside.right_sidebar{display:none;}
 <img class="header" title="Header Image" alt="Header image not selected" src="<?php echo $headerimage; ?>" >
 <div id="inside" class="header">
 <div id="logo" class="box"><!--position logo-->
-  <p>position: logo</p>
   <?php if ( $logotype == "image" ) : ?>
     <img src="<?php echo $logo; ?>
   <?php else : ?>
-    <h3><?php echo $logo; ?></h3>
+    <a href="/"><?php echo $logo; ?></a>
   <?php endif; ?>  
   <jdoc:include type="modules" name="logo" />
 </div>
