@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:500' rel='stylesheet' type='text/css'>
 <!--get the parameters of the template-->
 <?php if ( $this->params->get('headerimage') ) {
   $headerimage = $this->params->get('headerimage'); 
