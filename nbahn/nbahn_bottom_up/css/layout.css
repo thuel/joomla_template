@@ -7,7 +7,7 @@
 }
 div.container {
   position:relative;	
-  margin-bottom:-0.8%;
+/*  margin-bottom:-0.8%;*/
 }
 #inside {
   padding 5px;
@@ -20,14 +20,14 @@ div.container {
   height:80%;
 }
 header {
+  margin-bottom:-3px;
 }
 img.header {
   height:100%;
   width:100%;
-  padding-bottom:-1px;
 }
 #logo {
-  width:22%;
+  width:50%;
   float:left;
 }
 #search {
@@ -41,6 +41,12 @@ nav {
   one right and one to adapt its position through margin:auto in the middle
   Now there is a new implementation of this.
 */
+#content {
+  height:100%;
+  width:100%;
+  float:left;
+  min-height:100%;
+}
 #main_body {
   float:left;
   width:78%;
