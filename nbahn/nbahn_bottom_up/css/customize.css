@@ -119,7 +119,7 @@ nav ul.menu li a {
 /* old different menu item sizes
   padding:11px 22px; */
 /* new implementation */
-  width:80px;
+  width:100px;
   display:block;
   text-align:center;
   padding: 11px 22px;
