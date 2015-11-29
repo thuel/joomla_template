@@ -89,7 +89,7 @@ aside.right_sidebar{display:none;}
 </div>
 <div id="main_body">
 <section>
-<article>
+<article class="inside">
 <jdoc:include type="component" />
 </article>
 </section>

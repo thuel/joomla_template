@@ -8,7 +8,7 @@
 .container {
 }
 .inside {
-  padding:8px;
+  padding:8px 16px;
 }
 .inside.header {
   padding:0px;
@@ -62,10 +62,27 @@ section {
   overflow:hidden;
 }
 #breadcrumb {
+  width: auto;
+  font-size: 0.89em;
+  text-decoration:none;
+  margin-bottom: 0px;
+  margin-top: 4px;
+  /*padding-left: 22px;*/
 }
 #breadcrumb.inside {
   padding-top:2px;
   padding-bottom:2px;
+}
+#breadcrumb li {
+  display:inline;
+}
+#breadcrumb a {
+  color: #1a1c2a;
+  text-decoration: none;
+}
+#breadcrumb a:hover {
+  color: #02a6dc;
+  text-decoration: underline;
 }
 aside.left_sidebar {
   float:left;
@@ -82,7 +99,7 @@ aside.right_sidebar {
   overflow:hidden;
 }
 article {
-  height:100%; /* Only test value, has to be changed to adapt to content */
+  min-height:400px; /* Only test value, has to be changed to adapt to content */
 }
 footer {
   clear:both;
