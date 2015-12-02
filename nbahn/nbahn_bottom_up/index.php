@@ -84,8 +84,8 @@ aside.right_sidebar{display:none;}
 </nav>
 <!--start of the three column layout-->
 <div id="content">
-<div id="breadcrumb" class="inside">
-  <jdoc:include type="modules" name="breadcrumb" />
+<div id="breadcrumbs" class="inside">
+  <jdoc:include type="modules" name="breadcrumbs" />
 </div>
 <div id="main_body">
 <section>

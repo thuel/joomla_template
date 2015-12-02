@@ -61,7 +61,7 @@ section {
   float:right;
   overflow:hidden;
 }
-#breadcrumb {
+#breadcrumbs {
   width: auto;
   font-size: 0.89em;
   text-decoration:none;
@@ -69,18 +69,18 @@ section {
   margin-top: 4px;
   /*padding-left: 22px;*/
 }
-#breadcrumb.inside {
+#breadcrumbs.inside {
   padding-top:2px;
   padding-bottom:2px;
 }
-#breadcrumb li {
+#breadcrumbs li {
   display:inline;
 }
-#breadcrumb a {
+#breadcrumbs a {
   color: #1a1c2a;
   text-decoration: none;
 }
-#breadcrumb a:hover {
+#breadcrumbs a:hover {
   color: #02a6dc;
   text-decoration: underline;
 }
