@@ -12,6 +12,7 @@
 	<files>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
+		<folder>html</folder>
 		<folder>images/</folder>
 		<folder>css/</folder>
 	</files>

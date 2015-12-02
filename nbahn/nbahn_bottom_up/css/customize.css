@@ -145,16 +145,189 @@ aside.right_sidebar {
 }
 article {
 }
+article p {
+  padding-top:8px;
+}
+p > img {
+  display:block;
+  margin:auto;
+  padding-bottom:10px;
+}
 footer {
   text-align:center;
 }
+/**************************/
 /* Joomla specific styles */
-.moduletable h3 {
+/**************************/
+/*.moduletable h3 {
   font-family: 'Cabin Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 6px;
-}
+}*/
 .search {
   text-align:center;
+}
+.element-invisible {
+  display:none;
+}
+  /*Sidebar menu styling */
+aside ul li.parent a {
+  font-size:1.3em;
+  font-family:'Cabin Condensed', sans-serif;
+  font-weight:400;
+  margin-bottom: 6px;
+  line-height:2em;
+  text-decoration:none;
+}
+aside ul > li > ul.nav-child li a {
+  font-family:sans-serif;
+  font-size:1.1em;
+  font-weight:normal;
+  line-height:2em;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  list-style-type:none;
+  padding-bottom:2px;
+  padding-top:2px;
+  margin-left:8px;
+}
+  /*Login form styling*/
+#login-form fieldset.userdata {
+  margin-bottom: 5px;
+  margin-top: -15px;
+  margin-left: 0px;
+  border: 0px;
+  font-size: 0.96em;
+  float: left;
+}
+#login-form { 
+}
+#login-form ul {
+  margin-left: 0px;
+  padding-top:3px;
+}
+#login-form ul li {
+  border: 0px;
+  line-height: 1.1em;
+  float: left;
+  width: 100%;
+  padding:0.2em 0;
+}
+#login-form input.inputbox {
+  width: 90%;
+  margin-left: 0px;  
+}
+#login-form label {
+  display: block;
+  margin-left: 0px;  
+  padding-bottom:6px;
+}
+#form-login-username {
+  padding-bottom:6px;
+}
+#form-login-password {
+  padding-bottom:6px;
+}
+#form-login-remember label {
+  float: none;
+  width: auto;
+  display: inline;
+  padding-bottom:10px;
+}
+#form-login-remember input.inputbox {
+  width: auto;
+}
+.login fieldset {
+  border: 0;
+}
+.login-fields {
+  margin:10px 0;
+}
+.login-fields label {
+  float:left;
+  width:9em;
+}
+.login-description,
+.logout-description {
+  overflow:hidden;
+  padding-left:5px;
+  margin:20px 0 10px 0;
+}
+.logout-description {
+  margin-bottom:20px;
+}
+  /*Blog styling*/
+.cols-1 {
+  display: block;
+  float: none !important;
+  margin: 0 !important;
+}
+.cols-2 .column-1 {
+  width:48%;
+  float:left;
+}
+.cols-2 .column-2 {
+  width:48%;
+  float:right;
+  margin:0;
+}
+.cols-3 .column-1 {
+  float:left;
+  width:29%;
+  padding:0px 5px;
+  margin-right:4%;
+}
+.cols-3 .column-2 {
+  float:left;
+  width:29%;
+  margin-left:0;
+  padding:0px 5px;
+}
+.cols-3 .column-3 {
+  float:right;
+  width:29%;
+  padding:0px 5px;
+}
+.items-row {
+  overflow:hidden;
+  margin-bottom:10px !important;
+  margin-top:10px ;
+/*  background-color: #f1f1f1;*/
+}
+.column-2 {
+  width:55%;
+  margin-left:40%;
+}
+.column-3 {
+   width:30%;
+}
+.blog-more {
+  padding:10px 5px;
+}
+.blog-featured {
+  width:100%;
+}
+* article > h2 > a {
+  font-weight:normal;
+}
+.article-info {
+  font-size:0.9em;
+  padding: 3px 0 6px;
+}
+.article-info-term {
+  display:none;
+}
+/*Buttons*/
+/*button,*/
+.btn {
+  border: 1px solid;
+  padding: 4px 12px 6px;
+  font-family:'Cabin Condensed', sans-serif;
+  font-size:1.1em;
+  font-weight:500;
+  margin-top:10px;
+}
+ul.actions > li {
+  display:inline;
 }
