@@ -51,19 +51,17 @@ nav ul.menu li {
 }
 nav ul.menu li a {
   color:#F1F1F1;
-  text-decoration:none;
   background-color:#0b2161;
 }
 nav ul.menu li a:hover {
   color:#f1f1f1;
-  text-decoration:none;
   background-color:#133AAD; 
 }
 nav ul.menu li a:active {
   background-color:#133AAD; 
 }
 #content {
-  background:url("../images/bg_img07.png");
+  background:url("../images/bg_img03.PNG");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -131,3 +129,24 @@ h3 a:hover {
 .moduletable h3 {
   color: #5d0500;
 }
+#sidebar_top ul li.parent a {
+  color:#900700;
+}
+#sidebar_top ul li.parent a:hover {
+  color:#f1f1f1;
+  background:#900700;
+}
+#sidebar_top > ul > li > ul.nav-child li a {
+  border-bottom-color:#E2E2E2;
+}
+#login-form { 
+  color:#900700;
+}
+button,
+.btn {
+  border:#0b2161;
+  background:#0b2161;
+  color:#f1f1f1;
+}
+button:hover {
+  background:#133AAD;

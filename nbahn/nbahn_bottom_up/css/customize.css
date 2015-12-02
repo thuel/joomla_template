@@ -119,13 +119,16 @@ nav ul.menu li a {
 /* old different menu item sizes
   padding:11px 22px; */
 /* new implementation */
-  width:100px;
+  text-decoration:none;
+  min-width:80px;
   display:block;
   text-align:center;
   padding: 11px 22px;
   margin-right:1px; /* this produces the vertical line between menu items */
+}  
+nav ul.menu li a:hover {
+  text-decoration:none;
 }
-  
 #main_body {
 }
 aside.left_sidebar {
