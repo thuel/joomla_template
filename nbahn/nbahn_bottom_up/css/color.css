@@ -129,14 +129,14 @@ h3 a:hover {
 .moduletable h3 {
   color: #5d0500;
 }
-#sidebar_top ul li.parent a {
+.sidebar ul li.parent a {
   color:#900700;
 }
-#sidebar_top ul li.parent a:hover {
+.sidebar ul li.parent a:hover {
   color:#f1f1f1;
   background:#900700;
 }
-#sidebar_top > ul > li > ul.nav-child li a {
+.sidebar > ul > li > ul.nav-child li a {
   border-bottom-color:#E2E2E2;
 }
 #login-form { 

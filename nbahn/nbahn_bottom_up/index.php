@@ -96,12 +96,12 @@ aside.right_sidebar{display:none;}
 <?php if ( $this->countModules( 'left_top or left_bottom' )) : ?>
 <aside class="left_sidebar">
 <?php if ($this->countModules( 'left_top' )) : ?>
-<div id="sidebar_top" class="inside">
+<div id="sidebar_top" class="inside sidebar">
   <jdoc:include type="modules" name="left_top" />
 </div>
 <?php endif; ?>
 <?php if ($this->countModules( 'left_bottom' )) : ?>
-<div id="sidebar_bottom" class="inside">
+<div id="sidebar_bottom" class="inside sidebar">
   <jdoc:include type="modules" name="left_bottom" />
 </div>
 <?php endif; ?>
@@ -111,12 +111,12 @@ aside.right_sidebar{display:none;}
 <?php if ($this->countModules( 'right_top or right_bottom' )) : ?>
 <aside class="right_sidebar">
 <?php if ($this->countModules( 'right_top' )) : ?>
-<div id="sidebar_top" class="inside">
+<div id="sidebar_top" class="inside sidebar">
   <jdoc:include type="modules" name="right_top" />
 </div>
 <?php endif; ?>
 <?php if ($this->countModules( 'right_bottom' )) : ?>
-<div id="sidebar_bottom" class="inside">
+<div id="sidebar_bottom" class="inside sidebar">
   <jdoc:include type="modules" name="right_bottom" />
 </div>
 <?php endif; ?>
