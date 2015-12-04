@@ -339,3 +339,40 @@ sidebar button:hover,
 ul.actions > li {
   display:inline;
 }
+.btn.jmodedit {
+  border:none;
+}
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 0.25em;
+    line-height: 14px;
+}
+/*Editor styling*/
+.pull-left {
+  float:left;
+}
+.pull-right {
+  float:right;
+}
+.btn-toolbar {
+    /*font-size: 0px;*/
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.toggle-editor {
+  padding:5px;
+}
+select[multiple], select[size] {
+  height: auto;
+}
+select {
+  width: 220px;
+  border: 1px solid #CCC;
+  background-color: #FFF;
+  padding: 4px 6px;
+  margin-bottom: 9px;
+  font-size: 13px;
+  vertical-align: middle;
+}
