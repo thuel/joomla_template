@@ -9,6 +9,17 @@
 .inside {
   padding:8px 16px;
 }
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
 .inside.header {
   padding:0px;
   position:absolute;
