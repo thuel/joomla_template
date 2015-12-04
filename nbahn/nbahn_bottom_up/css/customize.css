@@ -10,12 +10,16 @@ li,dd {
 /*  margin-left: 1em;*/
 }
 fieldset { 
-/*  padding: .5em; */
+  padding: .75em;
+  margin-bottom: 1em; 
 }
 body {
   font-size: 76.1%;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   line-height: 1.3em;
+}
+legend {
+  font-weight: bold;
 }
 /* Template layout specific styles */
 a {
@@ -349,6 +353,16 @@ ul.actions > li {
     margin-right: 0.25em;
     line-height: 14px;
 }
+.sidebar [class^="icon-"], 
+.sidebar [class*=" icon-"],
+.btn-toolbar [class^="icon-"], 
+.btn-toolbar [class*=" icon-"] {
+    display: none;
+    width: 0;
+    height: 0;
+    margin-right: 0;
+    line-height: 0;
+}
 /*Editor styling*/
 .pull-left {
   float: left;
@@ -375,4 +389,12 @@ select {
   margin-bottom: 9px;
   font-size: 13px;
   vertical-align: middle;
+}
+#jform_publish_up_img,
+#jform_publish_down_img {
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+    cursor: pointer;
+    vertical-align: middle;
 }

@@ -156,3 +156,7 @@ sidebar button:hover,
 .btn-toolbar .btn:hover {
   background: #133AAD;
 }
+#jform_publish_up_img,
+#jform_publish_down_img {
+    background: transparent url("../images/system/calendar.png") no-repeat scroll 0% 0%;
+}
