@@ -70,9 +70,11 @@ section {
   width:72%;
   float:right;
   overflow:hidden;
+  min-height:500px;
 }
 section.blog {
   width:100%;
+  min-height:0px;
 }
 #breadcrumbs {
   width: auto;
@@ -112,7 +114,6 @@ aside.right_sidebar {
   overflow:hidden;
 }
 article {
-  min-height:400px; /* Only test value, has to be changed to adapt to content */
 }
 footer {
   clear:both;
