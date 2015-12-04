@@ -4,10 +4,10 @@ body {
   background-color: #313D61;
   }
 #wrapper {
-  /*background-color:gainsboro;*/
+  /*background-color: gainsboro;*/
 }
 .box {
-  /*background-color:lightyellow;*/
+  /*background-color: lightyellow;*/
 }
 .inside {
 }
@@ -17,8 +17,8 @@ header {
 #logo {
 }
 #logo a {
-  color:#F1F1F1;
-  text-decoration:none;
+  color: #F1F1F1;
+  text-decoration: none;
 }
 #logo a:hover {
   text-decoration: none;
@@ -28,13 +28,13 @@ header {
 #headertitle {
 }
 #search {
-  border-radius:6px;
+  border-radius: 6px;
   background-color: #0b2161;
   color: #f1f1f1;
 }
 nav {
- old  color:#F1F1F1;
-  background-color:#0B2161;
+ old  color: #F1F1F1;
+  background-color: #0B2161;
 }
 nav a {
   text-decoration: none;
@@ -44,24 +44,24 @@ nav a:hover {
 }
 nav ul.menu {
 /*  old implementation
-  background-color:#3B58B0;*/
+  background-color: #3B58B0;*/
 }
 nav ul.menu li {
-  background-color:#3B58B0 /* old #0b2161*/;
+  background-color: #3B58B0 /* old #0b2161*/;
 }
 nav ul.menu li a {
-  color:#F1F1F1;
-  background-color:#0b2161;
+  color: #F1F1F1;
+  background-color: #0b2161;
 }
 nav ul.menu li a:hover {
-  color:#f1f1f1;
-  background-color:#133AAD; 
+  color: #f1f1f1;
+  background-color: #133AAD; 
 }
-nav ul.menu li a:active {
-  background-color:#133AAD; 
+nav ul.menu li a: active {
+  background-color: #133AAD; 
 }
 #content {
-  background:url("../images/bg_img03.PNG");
+  background: url("../images/bg_img03.PNG");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -82,16 +82,16 @@ aside.right_sidebar {
 article {
 }
 footer {
-  background-color:black;
-  color:white;
+  background-color: black;
+  color: white;
 }
 /* typographical elements */
 a {
   color: #3b58b0;
 }
 a:hover,
-a:active,
-a:focus {
+a: active,
+a: focus {
   color: #f1f1f1;
   background: #0b2161;
 }
@@ -130,29 +130,29 @@ h3 a:hover {
   color: #5d0500;
 }
 .sidebar ul li.parent a {
-  color:#900700;
+  color: #900700;
 }
 .sidebar ul li.parent a:hover {
-  color:#f1f1f1;
-  background:#900700;
+  color: #f1f1f1;
+  background: #900700;
 }
 .sidebar > ul > li > ul.nav-child li a {
-  border-bottom-color:#E2E2E2;
+  border-bottom-color: #E2E2E2;
 }
 #login-form { 
-  color:#900700;
+  color: #900700;
 }
 .sidebar button,
 .sidebar .btn,
 .btn-toolbar button,
 .btn-toolbar .btn {
-  border:#0b2161;
-  background:#0b2161;
-  color:#f1f1f1;
+  border: #0b2161;
+  background: #0b2161;
+  color: #f1f1f1;
 }
 sidebar button:hover,
 .sidebar .btn:hover,
 .btn-toolbar button:hover,
 .btn-toolbar .btn:hover {
-  background:#133AAD;
+  background: #133AAD;
 }

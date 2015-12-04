@@ -1,13 +1,13 @@
 #wrapper {
-  width:75%;
-  margin:auto;
+  width: 75%;
+  margin: auto;
 }
 .box {
 }
 .container {
 }
 .inside {
-  padding:8px 16px;
+  padding: 8px 16px;
 }
 .clearfix:before,
 .clearfix:after {
@@ -21,75 +21,75 @@
   zoom: 1; /* ie 6/7 */
 }
 .inside.header {
-  padding:0px;
-  position:absolute;
-  top:10%;
-  left:1%;
-  width:98%;
-  height:80%;
+  padding: 0px;
+  position: absolute;
+  top: 10%;
+  left: 1%;
+  width: 98%;
+  height: 80%;
 }
 header {
-  margin-bottom:0px;
-  position:relative;
+  margin-bottom: 0px;
+  position: relative;
 }
 img.header {
-  height:100%;
-  width:100%;
-  margin-bottom:-3px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: -3px;
 }
 #logo {
-  width:50%;
-  float:left;
+  width: 50%;
+  float: left;
 }
 #search {
-  min-width:10%;
-  float:right;
+  min-width: 10%;
+  float: right;
 }
 nav {
-  clear:both; 
+  clear: both; 
 }
 nav .inside {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 /*The following part shows how to float three div side by side. The trick is to let float one left,
-  one right and one to adapt its position through margin:auto in the middle
+  one right and one to adapt its position through margin: auto in the middle
   Now there is a new implementation of this.
 */
 #content {
-  height:100%;
-  width:100%;
-  float:left;
-  min-height:100%;
+  height: 100%;
+  width: 100%;
+  float: left;
+  min-height: 100%;
 }
 #main_body {
-  float:left;
-  width:78%;
+  float: left;
+  width: 78%;
 }
 section {
-  width:72%;
-  float:right;
-  overflow:hidden;
-  min-height:500px;
+  width: 72%;
+  float: right;
+  overflow: hidden;
+  min-height: 500px;
 }
 section.blog {
-  width:100%;
-  min-height:0px;
+  width: 100%;
+  min-height: 0px;
 }
 #breadcrumbs {
   width: auto;
   font-size: 0.89em;
-  text-decoration:none;
+  text-decoration: none;
   margin-bottom: 0px;
   margin-top: 4px;
   /*padding-left: 22px;*/
 }
 #breadcrumbs.inside {
-  padding-top:2px;
-  padding-bottom:2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 #breadcrumbs li {
-  display:inline;
+  display: inline;
 }
 #breadcrumbs a {
   color: #1a1c2a;
@@ -100,21 +100,21 @@ section.blog {
   text-decoration: underline;
 }
 aside.left_sidebar {
-  float:left;
-  width:28%;
-  overflow:hidden;
+  float: left;
+  width: 28%;
+  overflow: hidden;
 }
 #sidebar_top {
 }
 #sidebar_bottom {
 }
 aside.right_sidebar {
-  float:right;
-  width:22%;
-  overflow:hidden;
+  float: right;
+  width: 22%;
+  overflow: hidden;
 }
 article {
 }
 footer {
-  clear:both;
+  clear: both;
 }

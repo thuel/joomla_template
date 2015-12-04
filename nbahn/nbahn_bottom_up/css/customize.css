@@ -1,37 +1,37 @@
 /* Global reset and overall styles */
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 h1,h2,h3,h4,h5,h6,p,blockquote,form,label,ul,ol,dl,fieldset,address {
 /*  margin: 0.5em 0; */
 }
 li,dd { 
-/*  margin-left:1em;*/
+/*  margin-left: 1em;*/
 }
 fieldset { 
-/*  padding:.5em; */
+/*  padding: .5em; */
 }
 body {
-  font-size:76.1%;
-  font-family:Verdana, Arial, Helvetica, sans-serif;
-  line-height:1.3em;
+  font-size: 76.1%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  line-height: 1.3em;
 }
 /* Template layout specific styles */
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 a:hover,
-a:active,
-a:focus {
+a: active,
+a: focus {
   text-decoration: underline;
 }
 /* is h1 used anywhere? */
 h1 {
-  font-family:'Cabin Condensed', sans-serif;
-  font-weight:400;
-  font-size:1.9em;
-  margin-bottom:12px;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.9em;
+  margin-bottom: 12px;
 }
 h1 a {
   text-decoration: none;
@@ -64,7 +64,7 @@ h3 a:hover {
   text-decoration: none;
 }
 ol, ul {
-  list-style:none;
+  list-style: none;
 }
 ul {
 }
@@ -78,56 +78,56 @@ header {
 }
 #logo a {
   font-family: 'Cabin Condensed', sans-serif;
-  font-size:2.4em;
-  font-weight:400;
-  line-height:1em;
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: 1em;
   padding: 0 14px;
-  vertical-align:baseline;
-  letter-spacing:-0.03em;
+  vertical-align: baseline;
+  letter-spacing: -0.03em;
 }
 #search {
   padding: 0px;
 }
 nav {
-  margin:-0px 0 0 0;
-  float:left;
-  font-family:'Cabin Condensed', sans-serif;
-  font-size:1.4em;
-  font-weight:600;
-  overflow:hidden;
-  padding-left:0;
-  width:100%;
+  margin: -0px 0 0 0;
+  float: left;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  overflow: hidden;
+  padding-left: 0;
+  width: 100%;
 }
 nav .inside {
 }
 nav ul.menu {
-/* old  list-style-type:none;
-  padding:13px 0;*/
+/* old  list-style-type: none;
+  padding: 13px 0;*/
 /* new implementation */
-  list-style-type:none;
-  margin:0;
-  padding:0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 nav ul.menu li {
-/* old  margin:0;
-  display:inline;
-  padding-right:1px;*/
+/* old  margin: 0;
+  display: inline;
+  padding-right: 1px;*/
 /* new implementation */
-  float:left;
+  float: left;
 }
 nav ul.menu li a {
 /* old different menu item sizes
-  padding:11px 22px; */
+  padding: 11px 22px; */
 /* new implementation */
-  text-decoration:none;
-  min-width:80px;
-  display:block;
-  text-align:center;
+  text-decoration: none;
+  min-width: 80px;
+  display: block;
+  text-align: center;
   padding: 11px 22px;
-  margin-right:1px; /* this produces the vertical line between menu items */
+  margin-right: 1px; /* this produces the vertical line between menu items */
 }  
 nav ul.menu li a:hover {
-  text-decoration:none;
+  text-decoration: none;
 }
 #main_body {
 }
@@ -146,15 +146,15 @@ aside.right_sidebar {
 article {
 }
 article p {
-  padding-top:8px;
+  padding-top: 8px;
 }
 p > img {
-  display:block;
-  margin:auto;
-  padding-bottom:10px;
+  display: block;
+  margin: auto;
+  padding-bottom: 10px;
 }
 footer {
-  text-align:center;
+  text-align: center;
 }
 /**************************/
 /* Joomla specific styles */
@@ -166,31 +166,31 @@ footer {
   margin-bottom: 6px;
 }*/
 .search {
-  text-align:center;
+  text-align: center;
 }
 .element-invisible {
-  display:none;
+  display: none;
 }
   /*Sidebar menu styling */
 aside ul li.parent a {
-  font-size:1.3em;
-  font-family:'Cabin Condensed', sans-serif;
-  font-weight:400;
+  font-size: 1.3em;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 400;
   margin-bottom: 6px;
-  line-height:2em;
-  text-decoration:none;
+  line-height: 2em;
+  text-decoration: none;
 }
 aside ul > li > ul.nav-child li a {
-  font-family:sans-serif;
-  font-size:1.1em;
-  font-weight:normal;
-  line-height:2em;
-  border-bottom-style:solid;
-  border-bottom-width:1px;
-  list-style-type:none;
-  padding-bottom:2px;
-  padding-top:2px;
-  margin-left:8px;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: normal;
+  line-height: 2em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  list-style-type: none;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  margin-left: 8px;
 }
   /*Login form styling*/
 #login-form fieldset.userdata {
@@ -205,14 +205,14 @@ aside ul > li > ul.nav-child li a {
 }
 #login-form ul {
   margin-left: 0px;
-  padding-top:3px;
+  padding-top: 3px;
 }
 #login-form ul li {
   border: 0px;
   line-height: 1.1em;
   float: left;
   width: 100%;
-  padding:0.2em 0;
+  padding: 0.2em 0;
 }
 #login-form input.inputbox {
   width: 90%;
@@ -221,19 +221,19 @@ aside ul > li > ul.nav-child li a {
 #login-form label {
   display: block;
   margin-left: 0px;  
-  padding-bottom:6px;
+  padding-bottom: 6px;
 }
 #form-login-username {
-  padding-bottom:6px;
+  padding-bottom: 6px;
 }
 #form-login-password {
-  padding-bottom:6px;
+  padding-bottom: 6px;
 }
 #form-login-remember label {
   float: none;
   width: auto;
   display: inline;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 #form-login-remember input.inputbox {
   width: auto;
@@ -242,20 +242,20 @@ aside ul > li > ul.nav-child li a {
   border: 0;
 }
 .login-fields {
-  margin:10px 0;
+  margin: 10px 0;
 }
 .login-fields label {
-  float:left;
-  width:9em;
+  float: left;
+  width: 9em;
 }
 .login-description,
 .logout-description {
-  overflow:hidden;
-  padding-left:5px;
-  margin:20px 0 10px 0;
+  overflow: hidden;
+  padding-left: 5px;
+  margin: 20px 0 10px 0;
 }
 .logout-description {
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
   /*Blog styling*/
 .cols-1 {
@@ -264,59 +264,59 @@ aside ul > li > ul.nav-child li a {
   margin: 0 !important;
 }
 .cols-2 .column-1 {
-  width:48%;
-  float:left;
+  width: 48%;
+  float: left;
 }
 .cols-2 .column-2 {
-  width:48%;
-  float:right;
-  margin:0;
+  width: 48%;
+  float: right;
+  margin: 0;
 }
 .cols-3 .column-1 {
-  float:left;
-  width:29%;
-  padding:0px 5px;
-  margin-right:4%;
+  float: left;
+  width: 29%;
+  padding: 0px 5px;
+  margin-right: 4%;
 }
 .cols-3 .column-2 {
-  float:left;
-  width:29%;
-  margin-left:0;
-  padding:0px 5px;
+  float: left;
+  width: 29%;
+  margin-left: 0;
+  padding: 0px 5px;
 }
 .cols-3 .column-3 {
-  float:right;
-  width:29%;
-  padding:0px 5px;
+  float: right;
+  width: 29%;
+  padding: 0px 5px;
 }
 .items-row {
-  overflow:hidden;
-  margin-bottom:10px !important;
-  margin-top:10px ;
+  overflow: hidden;
+  margin-bottom: 10px !important;
+  margin-top: 10px ;
 /*  background-color: #f1f1f1;*/
 }
 .column-2 {
-  width:55%;
-  margin-left:40%;
+  width: 55%;
+  margin-left: 40%;
 }
 .column-3 {
-   width:30%;
+   width: 30%;
 }
 .blog-more {
-  padding:10px 5px;
+  padding: 10px 5px;
 }
 .blog-featured {
-  width:100%;
+  width: 100%;
 }
 * article > h2 > a {
-  font-weight:normal;
+  font-weight: normal;
 }
 .article-info {
-  font-size:0.9em;
+  font-size: 0.9em;
   padding: 3px 0 6px;
 }
 .article-info-term {
-  display:none;
+  display: none;
 }
 /*Buttons*/
 .sidebar button,
@@ -325,22 +325,22 @@ aside ul > li > ul.nav-child li a {
 .btn-toolbar .btn {
   border: 1px solid;
   padding: 4px 12px 6px;
-  font-family:'Cabin Condensed', sans-serif;
-  font-size:1.1em;
-  font-weight:500;
-  margin-top:10px;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-top: 10px;
 }
 sidebar button:hover,
 .sidebar .btn:hover,
 .btn-toolbar button:hover,
 .btn-toolbar .btn:hover {
-  text-decoration:none;
+  text-decoration: none;
 }
 ul.actions > li {
-  display:inline;
+  display: inline;
 }
 .btn.jmodedit {
-  border:none;
+  border: none;
 }
 [class^="icon-"], [class*=" icon-"] {
     display: inline-block;
@@ -351,10 +351,10 @@ ul.actions > li {
 }
 /*Editor styling*/
 .pull-left {
-  float:left;
+  float: left;
 }
 .pull-right {
-  float:right;
+  float: right;
 }
 .btn-toolbar {
     /*font-size: 0px;*/
@@ -362,7 +362,7 @@ ul.actions > li {
     margin-bottom: 9px;
 }
 .toggle-editor {
-  padding:5px;
+  padding: 5px;
 }
 select[multiple], select[size] {
   height: auto;
