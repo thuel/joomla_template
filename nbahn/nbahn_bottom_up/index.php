@@ -94,14 +94,14 @@ aside.right_sidebar{display:none;}
 </article>
 </section>
 <?php if ( $this->countModules( 'left_top or left_bottom' )) : ?>
-<aside class="left_sidebar">
+<aside class="sidebar left_sidebar">
 <?php if ($this->countModules( 'left_top' )) : ?>
-<div id="sidebar_top" class="inside sidebar">
+<div id="sidebar_top" class="inside">
   <jdoc:include type="modules" name="left_top" />
 </div>
 <?php endif; ?>
 <?php if ($this->countModules( 'left_bottom' )) : ?>
-<div id="sidebar_bottom" class="inside sidebar">
+<div id="sidebar_bottom" class="inside">
   <jdoc:include type="modules" name="left_bottom" />
 </div>
 <?php endif; ?>
@@ -109,14 +109,14 @@ aside.right_sidebar{display:none;}
 <?php endif; ?>
 </div><!--end of main_body div-->
 <?php if ($this->countModules( 'right_top or right_bottom' )) : ?>
-<aside class="right_sidebar">
+<aside class="sidebar right_sidebar">
 <?php if ($this->countModules( 'right_top' )) : ?>
-<div id="sidebar_top" class="inside sidebar">
+<div id="sidebar_top" class="inside">
   <jdoc:include type="modules" name="right_top" />
 </div>
 <?php endif; ?>
 <?php if ($this->countModules( 'right_bottom' )) : ?>
-<div id="sidebar_bottom" class="inside sidebar">
+<div id="sidebar_bottom" class="inside">
   <jdoc:include type="modules" name="right_bottom" />
 </div>
 <?php endif; ?>
