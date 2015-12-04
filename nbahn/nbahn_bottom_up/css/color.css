@@ -142,11 +142,17 @@ h3 a:hover {
 #login-form { 
   color:#900700;
 }
-button,
-.btn {
+.sidebar button,
+.sidebar .btn,
+.btn-toolbar button,
+.btn-toolbar .btn {
   border:#0b2161;
   background:#0b2161;
   color:#f1f1f1;
 }
-button:hover {
+sidebar button:hover,
+.sidebar .btn:hover,
+.btn-toolbar button:hover,
+.btn-toolbar .btn:hover {
   background:#133AAD;
+}

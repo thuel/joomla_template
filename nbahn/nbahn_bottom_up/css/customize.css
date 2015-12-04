@@ -319,14 +319,22 @@ aside ul > li > ul.nav-child li a {
   display:none;
 }
 /*Buttons*/
-/*button,*/
-.btn {
+.sidebar button,
+.sidebar .btn,
+.btn-toolbar button,
+.btn-toolbar .btn {
   border: 1px solid;
   padding: 4px 12px 6px;
   font-family:'Cabin Condensed', sans-serif;
   font-size:1.1em;
   font-weight:500;
   margin-top:10px;
+}
+sidebar button:hover,
+.sidebar .btn:hover,
+.btn-toolbar button:hover,
+.btn-toolbar .btn:hover {
+  text-decoration:none;
 }
 ul.actions > li {
   display:inline;
