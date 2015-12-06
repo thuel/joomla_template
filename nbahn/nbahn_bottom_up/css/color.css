@@ -129,23 +129,38 @@ h3 a:hover {
 .moduletable h3 {
   color: #5d0500;
 }
-.sidebar ul li.parent a {
+  /*SIDEBAR NAVIGATION MENU STYLING*/
+aside ul.nav.menu a {
   color: #900700;
 }
-.sidebar ul li.parent a:hover {
-  color: #f1f1f1;
-  background: #900700;
+aside ul.nav.menu a:hover {
+  background: none;
 }
-.sidebar > ul > li > ul.nav-child li a {
+.sidebar > ul.nav.menu > li > ul.nav-child li a {
   border-bottom-color: #E2E2E2;
 }
+  /*OTHER SIDEBAR MENUS*/
+aside ul.nav.menu {
+  border-color: #e3e3e3;
+  background: rgba(246,246,246,0.4)/*#f1f1f1*/;
+}
+  /*LOGIN FORM COLORS*/
 #login-form { 
   color: #900700;
 }
+  /*OTHER SIDEBAR STYLES*/
+.userdata > ul.unstyled > li a {
+  color: #900700;
+}
+.userdata > ul.unstyled > li a:hover {
+  background: none;
+}
+  /*BUTTON COLORS*/
 .sidebar button,
 .sidebar .btn,
 .btn-toolbar button,
-.btn-toolbar .btn {
+.btn-toolbar .btn,
+.btn-group .btn {
   border: #0b2161;
   background: #0b2161;
   color: #f1f1f1;

@@ -175,13 +175,27 @@ footer {
 .element-invisible {
   display: none;
 }
-  /*Sidebar menu styling */
-aside ul li.parent a {
+  /*OTHER SIDEBAR MENUS*/
+aside ul.nav.menu {
+  margin: 0 0 1.7em;
+  padding: 6px 6px 8px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+}
+aside ul.nav.menu a{
+  text-decoration: none;
+}
+aside ul.nav.menu a:hover {
+  font-weight: 800;
+}
+  /*SIDEBAR NAVIGATION MENU STYLING */
+aside ul > li a {
   font-size: 1.3em;
   font-family: 'Cabin Condensed', sans-serif;
   font-weight: 400;
-  margin-bottom: 6px;
-  line-height: 2em;
+  margin-bottom: 0;
+  line-height: 1.3em;
   text-decoration: none;
 }
 aside ul > li > ul.nav-child li a {
@@ -196,7 +210,23 @@ aside ul > li > ul.nav-child li a {
   padding-top: 2px;
   margin-left: 8px;
 }
-  /*Login form styling*/
+  /*OTHER SIDEBAR STYLES*/
+.userdata > ul.unstyled > li {
+  line-height: 1em;
+  padding: 0;
+}
+.userdata > ul.unstyled > li a {
+  font-weight: normal;
+  font-size: 0.96em;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+.userdata > ul.unstyled > li a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.96em;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+  /*LOGIN FORM STYLING */
 #login-form fieldset.userdata {
   margin-bottom: 5px;
   margin-top: -15px;
