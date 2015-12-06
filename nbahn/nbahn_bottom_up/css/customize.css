@@ -45,7 +45,7 @@ h1 a:hover {
 }
 h2 {
   font-family: 'Cabin Condensed', sans-serif;
-  font-weight: 550;
+  font-weight: 400;
   font-size: 1.6em;
   margin-bottom: 5px;  
 }
@@ -326,7 +326,8 @@ aside ul > li > ul.nav-child li a {
 .sidebar button,
 .sidebar .btn,
 .btn-toolbar button,
-.btn-toolbar .btn {
+.btn-toolbar .btn,
+.btn-group .btn {
   border: 1px solid;
   padding: 4px 12px 6px;
   font-family: 'Cabin Condensed', sans-serif;
@@ -337,7 +338,8 @@ aside ul > li > ul.nav-child li a {
 sidebar button:hover,
 .sidebar .btn:hover,
 .btn-toolbar button:hover,
-.btn-toolbar .btn:hover {
+.btn-toolbar .btn:hover,
+.btn-group .btn:hover {
   text-decoration: none;
 }
 ul.actions > li {
@@ -397,4 +399,13 @@ select {
     margin-left: 3px;
     cursor: pointer;
     vertical-align: middle;
+}
+.control-label {
+  padding: .5em 0 .35em;
+}
+.controls {
+  padding-bottom: .35em;
+}
+.btn-group {
+  padding: .5em 0 .35em;
 }

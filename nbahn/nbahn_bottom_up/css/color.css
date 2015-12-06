@@ -22,7 +22,7 @@ header {
 }
 #logo a:hover {
   text-decoration: none;
-  color: 0b2161;
+  color: #0b2161;
   background: none;
 }
 #headertitle {
@@ -33,7 +33,7 @@ header {
   color: #f1f1f1;
 }
 nav {
- old  color: #F1F1F1;
+  color: #F1F1F1;
   background-color: #0B2161;
 }
 nav a {
@@ -153,7 +153,8 @@ h3 a:hover {
 sidebar button:hover,
 .sidebar .btn:hover,
 .btn-toolbar button:hover,
-.btn-toolbar .btn:hover {
+.btn-toolbar .btn:hover,
+.btn-group .btn:hover {
   background: #133AAD;
 }
 #jform_publish_up_img,
