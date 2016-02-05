@@ -152,6 +152,9 @@ article {
 article p {
   padding-top: 8px;
 }
+section.blog article {
+  padding-bottom: 2.5em;
+}
 p > img {
   display: block;
   margin: auto;
